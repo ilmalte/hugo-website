@@ -30,11 +30,11 @@ Once we have installed and imported our libraries, the first thing we have to do
 
 1. Browse a dictionary website.
 
-![search bar](https://media.giphy.com/media/Pkjx3kf4VLZmDdLcEF/giphy.gif)
+![search bar](https://raw.githubusercontent.com/ilmalte/hugo-website/master/content/assets/web-scraping-telegram-bot-python/gif-1.gif)
 
 2. Search for the unknown word and start reading the word meaning in the page result.
 
-![search result](https://media2.giphy.com/media/PjTDwNb0xwpyCSmpT0/giphy.gif)
+![search result](https://raw.githubusercontent.com/ilmalte/hugo-website/master/content/assets/web-scraping-telegram-bot-python/gif-2.gif)
 
 Now, let's take a look at the page result link:
 
@@ -42,7 +42,7 @@ Now, let's take a look at the page result link:
 
 If you are slightly smart you should have already realized how this URL is composed.
 
-![url](https://s5.gifyu.com/images/Istantanea_2020-03-31_23-49-32.png)
+![url](https://raw.githubusercontent.com/ilmalte/hugo-website/master/content/assets/web-scraping-telegram-bot-python/photo-2.png)
 
 The red portion is responsible for the magic trick. Whatever we write after the static portion will be interpreted by the website as a research, like the one described before. I have made some attempts, we can just add the word after the static portion and avoid the *?q=blabla* thing. Having said that, let's go back to our Python project. We are finally ready to define our *function*.
 
@@ -77,7 +77,7 @@ Let's try to build our program step by step. Firstly, we will cover all the firs
 
 In the following GIF image we can see the Python program in action.
 
-![python console](https://s5.gifyu.com/images/gif-3f586943b5bb37c02.gif)
+![python console](https://raw.githubusercontent.com/ilmalte/hugo-website/master/content/assets/web-scraping-telegram-bot-python/gif-3.gif)
 
 The *pprint(soup)* command at line 12 is logging the resulting HTML page of the GET request with link:
 
@@ -85,7 +85,7 @@ The *pprint(soup)* command at line 12 is logging the resulting HTML page of the 
 
 Now that we have the HTML result, we need to identify the point where the meaning and the pronunciation are located. To do so we can use the awesome function provided by our browser called "[Inspect element](https://www.lifewire.com/get-inspect-element-tool-for-browser-756549)" .
 
-![inspect elements](https://s5.gifyu.com/images/gif-4abd512a2f681537d.gif)
+![inspect elements](https://raw.githubusercontent.com/ilmalte/hugo-website/master/content/assets/web-scraping-telegram-bot-python/gif-4.gif)
 
 The **meaning** is located into a *span* with *class="def"*, the **pronunciation** into a *div* with *class="sound audio_play_button pron-uk icon-audio"*, this div has a property called *data-src-mp3* that will provide us an mp3 file with the word pronunciation!
 
@@ -135,7 +135,7 @@ To retrieve the *text* into the span and the link into the *data-src-mp3* proper
 
 As excepted, this is the output with the meaning and the pronunciation (the link to the mp3 file):
 
-![gif-55a7db7609731b761.gif](https://s5.gifyu.com/images/gif-55a7db7609731b761.gif)
+![gif-55a7db7609731b761.gif](https://raw.githubusercontent.com/ilmalte/hugo-website/master/content/assets/web-scraping-telegram-bot-python/gif-5.gif)
 
 ## HOW TO CREATE A TELEGRAM BOT
 Creating a Telegram Bot is stupidly easy. Assumed that we already have a Telegram account, we need to start a chat with [@**BotFather**](https://telegram.me/botfather) that will immediately reply us with a command list. At this point we can type */newbot* and follow its instructions.
@@ -175,7 +175,7 @@ We have to import some needed libraries: *asyncio*, *telepot*, *telepot.aio* and
 
 This is our Python console in action when our bot receive a message:
 
-![photo-3.png](https://s5.gifyu.com/images/photo-3.png)
+![photo-3.png](https://raw.githubusercontent.com/ilmalte/hugo-website/master/content/assets/web-scraping-telegram-bot-python/photo-3.png)
 
 What we have to do now is integrate our web scraper in order to convert it into a telegram bot.
 
@@ -246,7 +246,7 @@ We start by adding the three missing libraries: *pprint*, *BeautifulSoup* and *r
 
 Finally, we can see our Telegram bot in action! 
 
-![gif-6.gif](https://s5.gifyu.com/images/IMG-9128.gif)
+![gif-6.gif](https://raw.githubusercontent.com/ilmalte/hugo-website/master/content/assets/web-scraping-telegram-bot-python/gif-6.gif)
 
 ## THAT'S IT!
 
