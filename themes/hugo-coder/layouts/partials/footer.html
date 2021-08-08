@@ -1,6 +1,37 @@
+<script>
+
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function handleFortuneCookie(){
+  fetch('https://raw.githubusercontent.com/ilmalte/hugo-website/master/themes/hugo-coder/layouts/partials/fortune-cookies/fortune-cookies.json')
+  .then(response => {
+    fortuneCookies = response.json();
+
+    console.log("response: ", fortuneCookies);
+
+    fortuneCookieIndex = randomInteger(0, Object.keys(jsonArray).length);
+
+    console.log("fortuneCookieIndex: ", fortuneCookieIndex);
+
+    // Object.keys(fortuneCookies)[fortuneCookieIndex];  //return the key name at index 0
+    // Object.values(fortuneCookies)[fortuneCookieIndex];  //return the key values at index 0
+
+    fortuneSpan = document.getElementById["fortune-cookie"];
+    
+    // fortuneSpan.innerHTML = 
+    
+  })
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
+}
+
+</script>
 <footer class="footer">
   <section class="container">
-    {{ with .Site.Params.footercontent | safeHTML }}
+    <span id="fortune-cookie"></span>
+    <!-- {{ with .Site.Params.footercontent | safeHTML }}
       <p>{{.}}</p>
     {{ end }}
     {{ if not .Site.Params.hideCopyright }}
@@ -18,6 +49,6 @@
     {{ if .Site.Params.commit }}
       {{ if or (not .Site.Params.hideCredits) (not .Site.Params.hideCopyright) }} · {{ end }}
       [<a href="{{ .Site.Params.commit }}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]
-    {{ end }}
+    {{ end }} -->
   </section>
 </footer>
