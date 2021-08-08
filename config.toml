@@ -13,8 +13,6 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-# disqusShortname = "yourdiscussshortname"
-
 [params]
     author = "Daniele Maltese"
     description = "Italian Junior Developer with a lot of things in mind."
@@ -23,7 +21,7 @@ pygmentscodefencesguesssyntax = true
     avatarurl = "images/avatar.png"
     footercontent = "I'm just trying to act cool."
 
-    dateformat = "January 2, 2006"
+    dateformat = "January, 2006"
 
     hideCredits = true
     hideCopyright = true
@@ -83,7 +81,7 @@ pygmentscodefencesguesssyntax = true
             weight = 1
             url = "posts/"
 
-	    # [[languages.en.menu.main]]
+    	    # [[languages.en.menu.main]]
             # name = "About"
             # weight = 2
             # url = "about/"
@@ -97,34 +95,3 @@ pygmentscodefencesguesssyntax = true
             name = "Contact me"
             weight = 5
             url = "contact/"
-
-
-    # [languages.it]
-        # languagename = "Italian"
-
-        # [languages.it.params]
-            # info = "Full Stack testa di cazzo"
-            # description = "Sito personale di Daniele Maltese"
-            # keywords = "blog,sviluppatore,personale"
-            # footercontent = "Coloque algum texto aqui."
-
-        # [languages.it.menu]
-	    # [[languages.it.menu.main]]
-            # name = "Blog"
-            # weight = 1
-            # url = "posts/"
-
-            # [[languages.it.menu.main]]
-            # name = "About"
-            # weight = 2
-            # url = "about/"
-
-            # [[languages.it.menu.main]]
-            # name = "Progetti"
-            # weight = 3
-            # url = "projects/"
-
-            # [[languages.it.menu.main]]
-            # name = "Contattami"
-            # weight = 5
-            #url = "contact/"
