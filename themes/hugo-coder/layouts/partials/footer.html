@@ -1,54 +1,81 @@
-<script>
-
-function randomInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function handleFortuneCookie(){
-  fetch('https://raw.githubusercontent.com/ilmalte/hugo-website/master/themes/hugo-coder/layouts/partials/fortune-cookies/fortune-cookies.json')
-  .then(response => {
-    fortuneCookies = response.json();
-
-    console.log("response: ", fortuneCookies);
-
-    fortuneCookieIndex = randomInteger(0, Object.keys(jsonArray).length);
-
-    console.log("fortuneCookieIndex: ", fortuneCookieIndex);
-
-    // Object.keys(fortuneCookies)[fortuneCookieIndex];  //return the key name at index 0
-    // Object.values(fortuneCookies)[fortuneCookieIndex];  //return the key values at index 0
-
-    fortuneSpan = document.getElementById["fortune-cookie"];
-    
-    // fortuneSpan.innerHTML = 
-    
-  })
-  .then(data => console.log(data))
-  .catch(error => console.log(error));
-}
-
-</script>
 <footer class="footer">
   <section class="container">
-    <span id="fortune-cookie"></span>
-    <!-- {{ with .Site.Params.footercontent | safeHTML }}
-      <p>{{.}}</p>
-    {{ end }}
-    {{ if not .Site.Params.hideCopyright }}
-      {{ with .Site.Params.since }}
-        © {{ if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year }}
-      {{ else }}
-        © {{ now.Year }}
-      {{ end }}
-      {{ if .Site.Params.Author }} {{ .Site.Params.Author }} {{ end }}
-    {{ end }}
-    {{ if not .Site.Params.hideCredits }}
-      {{ if not .Site.Params.hideCopyright }} · {{ end }}
-      {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    {{ end }}
-    {{ if .Site.Params.commit }}
-      {{ if or (not .Site.Params.hideCredits) (not .Site.Params.hideCopyright) }} · {{ end }}
-      [<a href="{{ .Site.Params.commit }}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]
-    {{ end }} -->
+    <span id="fortune-cookie">
+      <strong>
+        <p id="fortune-cookie-text"></p>
+      </strong>
+      <p id="fortune-cookie-author"></p>
+    </span>
   </section>
 </footer>
+<script>
+
+  function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  let utils = {};
+  utils.get = (url) => {
+    return new Promise(function(resolve,reject){
+    var req = new XMLHttpRequest();
+    req.open('GET',url);
+    req.onload = function() {
+      if (req.status == 200)  {
+        resolve(req.response);
+      }
+      else {
+        reject(Error('promise error with ' + req.status));
+      }
+    };
+    req.onerror = function(err) {
+      reject(Error('Network Error with '+url+': ' + err));
+    };
+    req.onreadystatechange = function(m) {
+      console.log('m: ' + m);
+    };
+    req.send();
+    });
+  }
+  utils.getJSON = async function(url) {
+    var data = {}; 
+    var string = null;
+    try {
+      string = await utils.get(url);
+    }
+    catch (e) {
+      alert('error: ' + e);
+    }
+    try { 
+      data = JSON.parse(string);
+      success = true;
+    }
+    catch (e) {
+      alert('parse error');
+    }
+    return data;
+  }
+
+  async function getFortuneCookies() {
+    let fortuneSpan = document.getElementById("fortune-cookie");
+    let fortuneText = document.getElementById("fortune-cookie-text");
+    let fortuneAuthor = document.getElementById("fortune-cookie-author");
+    let url = 'https://raw.githubusercontent.com/ilmalte/hugo-website/master/themes/hugo-coder/layouts/partials/fortune-cookies/fortune-cookies.json';
+  
+    utils.getJSON(url).then(function(data) {
+      
+      fortuneCookies = data;
+  
+      fortuneCookieIndex = randomInteger(0, Object.keys(fortuneCookies).length);
+      
+      fortuneCookie = Object.values(fortuneCookies)[fortuneCookieIndex];
+  
+      fortuneText.textContent = fortuneCookie["text"];
+      fortuneAuthor.textContent = fortuneCookie["author"];
+
+    }).catch(function(e) {
+      alert('error - ' + e);
+    });
+  }
+  
+  getFortuneCookies();
+  
+  </script>
