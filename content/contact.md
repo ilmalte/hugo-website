@@ -5,5 +5,5 @@ slug = "contact"
 
 Would you like to contact me?\
 \
-You can send me a DM on Instagram [@ilmalte](https://www.instagram.com/ilmalte/)\
+You can send me a message via Telegram [@ilmalte](https://t.me/ilmalte)\
 or simply write me an email: info (at) danielemaltese.com
