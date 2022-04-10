@@ -63,8 +63,10 @@ Let's try to build our program step by step. Firstly, we will cover all the firs
     def getMeaning(text):
         # create url
         url = 'https://www.oxfordlearnersdictionaries.com/definition/english/' + text
+        # define headers
+        headers = { 'User-Agent': 'Generic user agent' }
         # get page
-        page = requests.get(url)
+        page = requests.get(url, headers=headers)
         # let's soup the page
         soup = BeautifulSoup(page.text, 'html.parser')
         pprint(soup)
@@ -106,8 +108,10 @@ To retrieve the *text* into the span and the link into the *data-src-mp3* proper
 	def getMeaning(text):
 	    # create url
 	    url = 'https://www.oxfordlearnersdictionaries.com/definition/english/' + text
-	    # get page
-	    page = requests.get(url)
+	    # define headers
+        headers = { 'User-Agent': 'Generic user agent' }
+        # get page
+        page = requests.get(url, headers=headers)
 	    # let's soup the page
 	    soup = BeautifulSoup(page.text, 'html.parser')
 	    pprint(soup)
@@ -209,8 +213,10 @@ We start by adding the three missing libraries: *pprint*, *BeautifulSoup* and *r
 	async def getMeaning(text):
 	    # create url
 	    url = 'https://www.oxfordlearnersdictionaries.com/definition/english/' + text
-	    # get page
-	    page = requests.get(url)
+        # define headers
+        headers = { 'User-Agent': 'Generic user agent' }
+        # get page
+        page = requests.get(url, headers=headers)
 	    # let's soup the page
 	    soup = BeautifulSoup(page.text, 'html.parser')
 	    pprint(soup)
