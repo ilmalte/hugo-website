@@ -195,7 +195,7 @@ We start by adding the three missing libraries: *pprint*, *BeautifulSoup* and *r
 	    # These are some useful variables
 	    content_type, chat_type, chat_id = telepot.glance(msg)
 	    # Log variables
-            print(content_type, chat_type, chat_id)
+        print(content_type, chat_type, chat_id)
 	    pprint(msg)
 	    username = msg['chat']['first_name']
 	    # Check that the content type is text and not the starting
@@ -251,4 +251,6 @@ Finally, we can see our Telegram bot in action!
 ## THAT'S IT!
 
 All things considered, writing a simple web scraper Telegram bot using Python is really quick and interesting. I hope you enjoyed this reading and that this little project will intrigue your mind and will help you in creating something similar or even better. Feel free to contact me if you struggle in understanding something tricky or just to let me know what you developed.
+
+Also, you can find the [repository on my Github](https://github.com/ilmalte/quick-dictionary-bot)!
 
