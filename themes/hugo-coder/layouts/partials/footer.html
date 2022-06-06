@@ -55,7 +55,6 @@
   }
 
   async function getFortuneCookies() {
-    let fortuneSpan = document.getElementById("fortune-cookie");
     let fortuneText = document.getElementById("fortune-cookie-text");
     let fortuneAuthor = document.getElementById("fortune-cookie-author");
     let url = 'https://raw.githubusercontent.com/ilmalte/hugo-website/master/themes/hugo-coder/layouts/partials/fortune-cookies/fortune-cookies.json';
@@ -72,10 +71,11 @@
       fortuneAuthor.textContent = fortuneCookie["author"];
 
     }).catch(function(e) {
-      alert('error - ' + e);
+      fortuneText.textContent = "I'm just trying to act cool."
+      fortuneAuthor.textContent = ""
     });
   }
   
   getFortuneCookies();
   
-  </script>
+</script>

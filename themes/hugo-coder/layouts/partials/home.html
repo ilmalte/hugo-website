@@ -4,7 +4,24 @@
       <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
-    <h2>{{ .Site.Params.info }}</h2>
+    <h2>
+      {{ if and .Site.Params.infoBase .Site.Params.infoList }}
+        {{ .Site.Params.infoBase }}
+        <span id='typewriter' data-words='{{ delimit .Site.Params.infoList ";" }}'></span>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script>
+          var elem = document.getElementById("typewriter");
+          var words = elem.getAttribute('data-words').split(";");
+          new Typewriter(elem, {
+            strings: words,
+            autoStart: true,
+            loop: true
+          });
+        </script>
+      {{ else }}
+        {{ .Site.Params.info }}
+      {{ end }}
+    </h2>
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort . "weight" }}

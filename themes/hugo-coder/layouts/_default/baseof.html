@@ -15,7 +15,7 @@
     {{ if .Permalink }}
       <base href="{{ .Permalink }}">
     {{ end }}
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ .Site.Params.Author }}{{ end }}</title>
 
     {{ if .Permalink }}
       <link rel="canonical" href="{{ .Permalink }}">

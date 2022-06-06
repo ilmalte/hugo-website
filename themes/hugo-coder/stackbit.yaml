@@ -55,6 +55,10 @@ models:
           - type: string
             name: info
           - type: string
+            name: infoBase
+          - type: list
+            name: infoList
+          - type: string
             name: avatarurl
           - type: string
             name: footercontent

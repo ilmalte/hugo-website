@@ -15,9 +15,11 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Daniele Maltese"
-    description = "Italian Junior Developer with a lot of things in mind."
+    description = "Technical and personal blog of an Italian Software Engineer currently based in Switzerland."
     keywords = "blog,developer,personal"
-    info = "Full Stack Dreamer"
+    info = "Full Stack Idiot"
+    infoBase = "Full Stack"
+    infoList = ["Developer", "Idiot", "Dreamer"]
     avatarurl = "images/avatar.png"
     footercontent = "I'm just trying to act cool."
 
@@ -64,6 +66,11 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-github"
     weight = 1
     url = "https://github.com/ilmalte/"
+[[params.social]]
+    name = "Linkedin"
+    icon = "fab fa-linkedin"
+    weight = 1
+    url = "https://www.linkedin.com/in/danielemaltese/"
 [[params.social]]
     name = "Instagram"
     icon = "fab fa-instagram"
