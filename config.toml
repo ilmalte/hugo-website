@@ -19,7 +19,7 @@ pygmentscodefencesguesssyntax = true
     keywords = "blog,developer,personal"
     info = "Full Stack Idiot"
     infoBase = "Full Stack"
-    infoList = ["Developer", "Idiot", "Dreamer"]
+    infoList = ["Developer", "Idiot", "Enthusiast", "Obsessed"]
     avatarurl = "images/avatar.png"
     footercontent = "I'm just trying to act cool."
 
