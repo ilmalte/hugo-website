@@ -1,7 +1,6 @@
 +++
 title = "About Me"
 slug = "about"
-hideHeader = true
 +++
 
 <div class="avatar" style="float: right; margin-left: 30px; margin-top:4px;">
