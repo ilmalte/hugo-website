@@ -5,6 +5,23 @@
 
   a {
     color: $link-color-dark;
+    text-decoration: underline;
+    text-decoration-thickness: 0.01em;
+    text-decoration-color: rgba($link-color-dark, 0.4);
+  }
+  
+  a.bio {
+    text-decoration-style: wavy;
+  }
+  a.project {
+    font-weight: 700;
+  }
+  a.project.sublink {
+    font-weight: 500;
+  }
+
+  .navigation a {
+    text-decoration: none;
   }
 
   h1,

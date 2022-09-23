@@ -6,6 +6,7 @@
       ul {
         li {
           .title {
+            text-decoration: none;
             color: $fg-color-dark;
             &:hover,
             &:focus {
