@@ -16,7 +16,7 @@ Junior Software Engineer at Swatch Group Services ⌚🧑‍💻
 
 <hr style="overflow:auto;">
 
-I may be slow to respond because I try to disconnect myself as much as possible for <u><a style="color: white" href="https://www.strava.com/athletes/ilmalte">coding</a></u> without distractions, <u><a style="color: white" href="https://www.strava.com/athletes/ilmalte">running</a></u>, doing random sports or just spending time with my loved ones but I am always up to get to know new people.
+I may be slow to respond because I try to disconnect myself as much as possible for <u><a style="color: white" href="https://github.com/ilmalte">coding</a></u> without distractions, <u><a style="color: white" href="https://www.strava.com/athletes/ilmalte">running</a></u>, doing random sports or just spending time with my loved ones but I am always up to get to know new people.
 
 **So, consider this a <u><a style="color: white" href="https://www.kalzumeus.com/standing-invitation/">standing invitation</a></u> and feel free to reach out:**
 
