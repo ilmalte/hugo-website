@@ -21,7 +21,7 @@ I may be slow to respond because I try to disconnect myself as much as possible 
 **So, consider this a <a href="https://www.kalzumeus.com/standing-invitation/">standing invitation</a> and feel free to reach out:**
 
 * <a href="https://t.me/ilmalte">tg.me/ilmalte</a>
-* <a href="mailto:ciao@maltese.dev">ciao\@maltese.dev</a>
+* <a href="mailto:ciao@maltese.dev">ciao@maltese.dev</a>
 * <a href="https://linkedin.com/in/danielemaltese/">linked.in/in/danielemaltese</a>
 * <a href="https://github.com/ilmalte">github.com/ilmalte</a>
 
