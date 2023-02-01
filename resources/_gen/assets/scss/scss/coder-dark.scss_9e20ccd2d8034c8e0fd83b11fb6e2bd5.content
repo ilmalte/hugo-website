@@ -2,7 +2,18 @@ body.colorscheme-dark {
   color: #dadada;
   background-color: #212121; }
   body.colorscheme-dark a {
-    color: #36679f; }
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-thickness: 0.01em;
+    text-decoration-color: rgba(255, 255, 255, 0.4); }
+  body.colorscheme-dark a.bio {
+    text-decoration-style: wavy; }
+  body.colorscheme-dark a.project {
+    font-weight: 700; }
+  body.colorscheme-dark a.project.sublink {
+    font-weight: 500; }
+  body.colorscheme-dark .navigation a {
+    text-decoration: none; }
   body.colorscheme-dark h1,
   body.colorscheme-dark h2,
   body.colorscheme-dark h3,
@@ -26,7 +37,18 @@ body.colorscheme-dark {
     color: #dadada;
     background-color: #212121; }
     body.colorscheme-auto a {
-      color: #36679f; }
+      color: #ffffff;
+      text-decoration: underline;
+      text-decoration-thickness: 0.01em;
+      text-decoration-color: rgba(255, 255, 255, 0.4); }
+    body.colorscheme-auto a.bio {
+      text-decoration-style: wavy; }
+    body.colorscheme-auto a.project {
+      font-weight: 700; }
+    body.colorscheme-auto a.project.sublink {
+      font-weight: 500; }
+    body.colorscheme-auto .navigation a {
+      text-decoration: none; }
     body.colorscheme-auto h1,
     body.colorscheme-auto h2,
     body.colorscheme-auto h3,
@@ -46,30 +68,32 @@ body.colorscheme-dark {
       border: 2px solid #dadada; } }
 
 body.colorscheme-dark .content .list ul li .title {
+  text-decoration: none;
   color: #dadada; }
   body.colorscheme-dark .content .list ul li .title:hover, body.colorscheme-dark .content .list ul li .title:focus {
-    color: #36679f; }
+    color: #ffffff; }
 
 body.colorscheme-dark .content .centered .about ul li a {
   color: #dadada; }
   body.colorscheme-dark .content .centered .about ul li a:hover, body.colorscheme-dark .content .centered .about ul li a:focus {
-    color: #36679f; }
+    color: #ffffff; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .content .list ul li .title {
+    text-decoration: none;
     color: #dadada; }
     body.colorscheme-auto .content .list ul li .title:hover, body.colorscheme-auto .content .list ul li .title:focus {
-      color: #36679f; }
+      color: #ffffff; }
   body.colorscheme-auto .content .centered .about ul li a {
     color: #dadada; }
     body.colorscheme-auto .content .centered .about ul li a:hover, body.colorscheme-auto .content .centered .about ul li a:focus {
-      color: #36679f; } }
+      color: #ffffff; } }
 
 body.colorscheme-dark .navigation a, body.colorscheme-dark .navigation span {
   color: #dadada; }
 
 body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:focus {
-  color: #36679f; }
+  color: #ffffff; }
 
 @media only screen and (max-width: 768px) {
   body.colorscheme-dark .navigation .navigation-list {
@@ -89,13 +113,13 @@ body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:f
   body.colorscheme-dark .navigation .menu-button {
     color: #dadada; }
     body.colorscheme-dark .navigation .menu-button:hover, body.colorscheme-dark .navigation .menu-button:focus {
-      color: #36679f; } }
+      color: #ffffff; } }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .navigation a, body.colorscheme-auto .navigation span {
     color: #dadada; }
   body.colorscheme-auto .navigation a:hover, body.colorscheme-auto .navigation a:focus {
-    color: #36679f; } }
+    color: #ffffff; } }
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
   body.colorscheme-auto .navigation .navigation-list {
@@ -115,13 +139,13 @@ body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:f
   body.colorscheme-auto .navigation .menu-button {
     color: #dadada; }
     body.colorscheme-auto .navigation .menu-button:hover, body.colorscheme-auto .navigation .menu-button:focus {
-      color: #36679f; } }
+      color: #ffffff; } }
 
 body.colorscheme-dark .footer a {
-  color: #36679f; }
+  color: #ffffff; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .footer a {
-    color: #36679f; } }
+    color: #ffffff; } }
 
 /*# sourceMappingURL=coder-dark.css.map */

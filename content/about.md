@@ -4,7 +4,7 @@ slug = "about"
 +++
 
 <div class="avatar" style="float: right; margin-left: 30px; margin-top:4px;">
-    <img src="/images/me.jpg" style="border-radius: 50%;" alt="profile pic" />
+    <img src="/images/me.png" style="border-radius: 50%;" alt="profile pic" />
 </div>
 
 Ciao, my name is **Daniele**. I am passionate about technology, curious and always enthusiast in new challenges.
