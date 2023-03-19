@@ -31,5 +31,6 @@ It remained nothing but a POC because after validating the idea with booksellers
 ## Relevant open source contributions
 🔗 <a class="project" href="https://github.com/dotnet/efcore/issues/27886">Pascal-case the DbContext name when scaffolding</a><br>
 Contribution to <a class="project sublink" href="https://github.com/dotnet/efcore/commit/5a759d5f61d2e28fc651f7059ce8b8bc0fe7ee3a">dotnet/efcore</a>
+
 🔗 <a class="project" href="https://github.com/dotnet/efcore/issues/30123">Create directory chain if doesn't exist for ef migrations bundle</a><br>
 Contribution to <a class="project sublink" href="https://github.com/dotnet/efcore/pull/30392/commits/c883f2dfa1668ad5ee6c6107cd3a7a22443c065f">dotnet/efcore</a>
