@@ -5,7 +5,7 @@ slug = "projects"
 
 ## Some quite interesting open source projects
 🥠 <a class="project" href="https://github.com/ilmalte/developer-fortune-cookies">developer-fortune-cookies</a><br>
-Fortune cookies for developers. A simple and clean Angular web application built using TailwindCSS. Open it, copy it or export it, repeat.
+Fortune cookies for developers. A simple and clean Angular web application built using TailwindCSS. Open it, copy it or export it, repeat. Try it <a href="https://ilmalte.github.io/developer-fortune-cookies/">here!</a>
 
 📱 <a class="project" href="https://github.com/ilmalte/flutter_fortune_cookies">flutter_fortune_cookies</a><br>
 Fortune cookies for developers. A way too simple flutter application I developed with the aim of starting to learn Flutter.
@@ -25,7 +25,7 @@ My first open source code ever. A Telegram bot written in Node.js that given a w
 📖 <a class="project" href="https://github.com/ilmalte/una-scatola-di-libri">una-scatola-di-libri</a><br>
 Landing page I've built to support tiny bookshops in Italy collecting orders during COVID-19.
 During the pandemic, indipendent bookstores were suffering because they mostly base their business on a brick and mortar model.
-It remained nothing but a POC because after validating the idea with booksellers we realized margins were too low because of shipping costs. <a href="https://una-scatola-di-libri.netlify.app/">The proof of concept is still accessible here!</a>
+It remained nothing but a POC because after validating the idea with booksellers we realized margins were too low because of shipping costs. The proof of concept is still accessible <a href="https://una-scatola-di-libri.netlify.app/">here!</a>
 
 
 ## Relevant open source contributions
