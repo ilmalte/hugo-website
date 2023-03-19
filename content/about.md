@@ -12,7 +12,7 @@ I let my crazy ideas drive my life, trying to do memorable things.
 
 I am currently living in Biel/Bienne, the metropolis of Swiss watchmaking in the Canton of Bern, Switzerland, and daily struggling with QWERTZ keyboards.
 
-Junior Software Engineer at Swatch Group Services ⌚🧑‍💻
+Software Engineer at Swatch Group Services ⌚🧑‍💻
 
 <hr style="overflow:auto;">
 
