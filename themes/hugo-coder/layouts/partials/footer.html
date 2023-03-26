@@ -29,9 +29,6 @@
     req.onerror = function(err) {
       reject(Error('Network Error with '+url+': ' + err));
     };
-    req.onreadystatechange = function(m) {
-      console.log('m: ' + m);
-    };
     req.send();
     });
   }
