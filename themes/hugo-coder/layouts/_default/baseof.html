@@ -112,10 +112,8 @@
       {{- partial "analytics/fathom" . -}}
     {{ end }}
     
-    {{ if and .Site.Params.googleAnalytics .Site.Params.googleAnalytics.siteID }}
-      {{- partial "analytics/ga4" . -}}
-    {{ end }}
-
+    {{- partial "analytics/ga4" . -}}
+    
   </body>
 
 </html>
